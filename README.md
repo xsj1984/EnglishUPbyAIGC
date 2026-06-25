@@ -97,6 +97,25 @@ All differences significant at p<0.001. Effect size (Cohen's d) = 1.28 for nativ
 
 > 学透单词看造句，学透句子看仿写。AI 让每个学生都能走完这条路。
 
+### AIGC 教学视频示例
+
+以下为 EnglishUp 系统为每个单词生成的 15 秒电影级情境视频：
+
+| 单词 | 视频 |
+|------|------|
+| shark | [📺 观看](videos/shark.mp4) |
+| pig | [📺 观看](videos/pig.mp4) |
+| guide | [📺 观看](videos/guide.mp4) |
+| make friends | [📺 观看](videos/make%20friends.mp4) |
+| the rule | [📺 观看](videos/the%20rule.mp4) |
+| trunk | [📺 观看](videos/trunk.mp4) |
+| moment | [📺 观看](videos/moment.mp4) |
+| reluctant | [📺 观看](videos/reluctant.mp4) |
+| late for | [📺 观看](videos/late%20for.mp4) |
+| scary | [📺 观看](videos/scary.mp4) |
+| strange | [📺 观看](videos/strange.mp4) |
+| base camp | [📺 观看](videos/Base%20camp.mp4) |
+
 ### 链接
 
 - 实验平台：[https://engup.cn](https://engup.cn)
