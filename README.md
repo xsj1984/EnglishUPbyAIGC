@@ -103,22 +103,22 @@ All differences significant at p<0.001. Effect size (Cohen's d) = 1.28 for nativ
 
 <table>
 <tr>
-<td align="center"><b>shark</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/shark.mp4" width="180" controls muted></video></td>
-<td align="center"><b>pig</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/pig.mp4" width="180" controls muted></video></td>
-<td align="center"><b>guide</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/guide.mp4" width="180" controls muted></video></td>
-<td align="center"><b>make friends</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/make%20friends.mp4" width="180" controls muted></video></td>
+<td align="center"><b>shark</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/shark.mp4" width="180" controls muted></video></td>
+<td align="center"><b>pig</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/pig.mp4" width="180" controls muted></video></td>
+<td align="center"><b>guide</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/guide.mp4" width="180" controls muted></video></td>
+<td align="center"><b>make friends</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/make%20friends.mp4" width="180" controls muted></video></td>
 </tr>
 <tr>
-<td align="center"><b>the rule</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/the%20rule.mp4" width="180" controls muted></video></td>
-<td align="center"><b>trunk</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/trunk.mp4" width="180" controls muted></video></td>
-<td align="center"><b>moment</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/moment.mp4" width="180" controls muted></video></td>
-<td align="center"><b>reluctant</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/reluctant.mp4" width="180" controls muted></video></td>
+<td align="center"><b>the rule</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/the%20rule.mp4" width="180" controls muted></video></td>
+<td align="center"><b>trunk</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/trunk.mp4" width="180" controls muted></video></td>
+<td align="center"><b>moment</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/moment.mp4" width="180" controls muted></video></td>
+<td align="center"><b>reluctant</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/reluctant.mp4" width="180" controls muted></video></td>
 </tr>
 <tr>
-<td align="center"><b>late for</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/late%20for.mp4" width="180" controls muted></video></td>
-<td align="center"><b>scary</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/scary.mp4" width="180" controls muted></video></td>
-<td align="center"><b>strange</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/strange.mp4" width="180" controls muted></video></td>
-<td align="center"><b>base camp</b><br><video src="https://github.com/xsj1984/EnglishUPbyAIGC/raw/main/videos/Base%20camp.mp4" width="180" controls muted></video></td>
+<td align="center"><b>late for</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/late%20for.mp4" width="180" controls muted></video></td>
+<td align="center"><b>scary</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/scary.mp4" width="180" controls muted></video></td>
+<td align="center"><b>strange</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/strange.mp4" width="180" controls muted></video></td>
+<td align="center"><b>base camp</b><br><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/Base%20camp.mp4" width="180" controls muted></video></td>
 </tr>
 </table>
 
