@@ -9,3 +9,4 @@ sage_submission/
 *.fdb_latexmk
 *.fls
 .DS_Store
+*.tex
