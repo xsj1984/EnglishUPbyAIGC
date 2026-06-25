@@ -99,22 +99,28 @@ All differences significant at p<0.001. Effect size (Cohen's d) = 1.28 for nativ
 
 ### AIGC 教学视频示例
 
-以下为 EnglishUp 系统为每个单词生成的 15 秒电影级情境视频：
+以下为 EnglishUp 系统为每个单词生成的 15 秒电影级情境视频（点击播放）：
 
-| 单词 | 视频 |
-|------|------|
-| shark | [📺 观看](videos/shark.mp4) |
-| pig | [📺 观看](videos/pig.mp4) |
-| guide | [📺 观看](videos/guide.mp4) |
-| make friends | [📺 观看](videos/make%20friends.mp4) |
-| the rule | [📺 观看](videos/the%20rule.mp4) |
-| trunk | [📺 观看](videos/trunk.mp4) |
-| moment | [📺 观看](videos/moment.mp4) |
-| reluctant | [📺 观看](videos/reluctant.mp4) |
-| late for | [📺 观看](videos/late%20for.mp4) |
-| scary | [📺 观看](videos/scary.mp4) |
-| strange | [📺 观看](videos/strange.mp4) |
-| base camp | [📺 观看](videos/Base%20camp.mp4) |
+<table>
+<tr>
+<td align="center"><b>shark</b><br><video src="videos/shark.mp4" width="180" controls muted></video></td>
+<td align="center"><b>pig</b><br><video src="videos/pig.mp4" width="180" controls muted></video></td>
+<td align="center"><b>guide</b><br><video src="videos/guide.mp4" width="180" controls muted></video></td>
+<td align="center"><b>make friends</b><br><video src="videos/make%20friends.mp4" width="180" controls muted></video></td>
+</tr>
+<tr>
+<td align="center"><b>the rule</b><br><video src="videos/the%20rule.mp4" width="180" controls muted></video></td>
+<td align="center"><b>trunk</b><br><video src="videos/trunk.mp4" width="180" controls muted></video></td>
+<td align="center"><b>moment</b><br><video src="videos/moment.mp4" width="180" controls muted></video></td>
+<td align="center"><b>reluctant</b><br><video src="videos/reluctant.mp4" width="180" controls muted></video></td>
+</tr>
+<tr>
+<td align="center"><b>late for</b><br><video src="videos/late%20for.mp4" width="180" controls muted></video></td>
+<td align="center"><b>scary</b><br><video src="videos/scary.mp4" width="180" controls muted></video></td>
+<td align="center"><b>strange</b><br><video src="videos/strange.mp4" width="180" controls muted></video></td>
+<td align="center"><b>base camp</b><br><video src="videos/Base%20camp.mp4" width="180" controls muted></video></td>
+</tr>
+</table>
 
 ### 链接
 
