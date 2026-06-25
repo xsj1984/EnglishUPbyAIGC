@@ -1,4 +1,6 @@
 .workbuddy/
+sage_template/
+sage_submission/
 *.aux
 *.log
 *.out
