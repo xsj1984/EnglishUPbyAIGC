@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EnglishUP — AIGC 英语教学视频</title>
+<title>EnglishUP — AIGC-Powered English Sentence Learning</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f7fa; color: #333; }
-  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 60px 20px; text-align: center; margin-top: 60px; }
+  .lang-bar { text-align: right; padding: 12px 20px; background: #1a1a2e; }
+  .lang-bar button { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 6px 18px; border-radius: 20px; cursor: pointer; font-size: 0.9em; transition: 0.2s; }
+  .lang-bar button:hover { background: rgba(255,255,255,0.25); }
+  .lang-bar button.active { background: #0f3460; border-color: #0f3460; }
+  .zh { display: none; }
+  body.show-zh .zh { display: revert; }
+  body.show-zh .en { display: none; }
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 60px 20px; text-align: center; margin-top: 0; }
   .hero h1 { font-size: 2em; margin-bottom: 10px; }
   .hero p { font-size: 1.1em; opacity: 0.85; max-width: 700px; margin: 0 auto; }
   .hero .badge { display: inline-block; background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 20px; margin-top: 16px; font-size: 0.9em; }
@@ -15,7 +22,6 @@
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
   .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: transform 0.2s; }
   .card:hover { transform: translateY(-3px); }
-  .card video { width: 100%; display: block; background: #000; }
   .card .video-wrap { aspect-ratio: 16 / 9; overflow: hidden; background: #000; }
   .card .video-wrap video { width: 100%; height: 100%; object-fit: contain; }
   .card .label { padding: 12px 16px; font-weight: 600; font-size: 1.1em; text-align: center; }
@@ -40,118 +46,115 @@
 </head>
 <body>
 
-<div class="intro">
-  <h2>Research on Rapid English Sentence Learning Method<br>Based on Large Language Models and AIGC for Chinese Students</h2>
+<div class="lang-bar">
+  <button onclick="document.body.classList.remove('show-zh');this.classList.add('active');document.getElementById('btn-zh').classList.remove('active')" class="active" id="btn-en">EN</button>
+  <button onclick="document.body.classList.add('show-zh');this.classList.add('active');document.getElementById('btn-en').classList.remove('active')" id="btn-zh">中文</button>
+</div>
 
-  <div class="highlight" style="border-left-color: #c0392b;">
-    <strong>⚠️ 中国英语教学的核心困境：</strong>能认词、难造句。中国 95% 以上的英语课堂采用传统模式——词汇背诵 + 语法讲解。一个 40 人的班级，每节课能获得教师书面批改造句反馈的学生通常不超过 5 人，反馈延迟可达数天。当前中国市场上的英语学习软件普遍仅关注词汇的"音—形—义"识别，缺乏对句子层面输出的训练和评价。学生能认出几千个单词，却写不出一句正确的英文。
+<!-- INTRO -->
+<div class="intro">
+  <h2 class="en">Research on Rapid English Sentence Learning Method<br>Based on Large Language Models and AIGC for Chinese Students</h2>
+  <h2 class="zh">基于大语言模型与AIGC的英语句子快速学习法</h2>
+
+  <div class="highlight en" style="border-left-color:#c0392b;">
+    <strong>&#9888; The Problem:</strong> Chinese students can recognize thousands of words but struggle to write a single correct sentence. Over 95% of classrooms use traditional methods — vocabulary drills and grammar lectures. In a 40-student class, fewer than 5 students receive written feedback per lesson, with delays of days. English learning apps in China focus almost exclusively on word recognition, ignoring sentence production entirely.
+  </div>
+  <div class="highlight zh" style="border-left-color:#c0392b;">
+    <strong>&#9888; 中国英语教学的核心困境：</strong>能认词、难造句。中国 95% 以上的英语课堂采用传统模式——词汇背诵 + 语法讲解。一个 40 人的班级，每节课能获得教师书面批改造句反馈的学生通常不超过 5 人，反馈延迟可达数天。当前中国市场上的英语学习软件普遍仅关注词汇识别，缺乏对句子层面输出的训练和评价。学生能认出几千个单词，却写不出一句正确的英文。
   </div>
 
-  <p><strong>EnglishUp</strong> 是一个 AI 驱动的英语学习系统，针对这一困境提供突破性解决方案。</p>
+  <p class="en"><strong>EnglishUp</strong> is an AI-powered system that solves this problem head-on.</p>
+  <p class="zh"><strong>EnglishUp</strong> 是一个 AI 驱动的英语学习系统，针对这一困境提供突破性解决方案。</p>
 
-  <div class="highlight">
+  <div class="highlight en">
+    <strong>Core Insight:</strong> Words are truly mastered only when you can form correct sentences with them. Sentences are truly mastered only when you can create your own. Before AI, most students couldn't complete this loop. Now they can — with instant feedback at every step.
+  </div>
+  <div class="highlight zh">
     <strong>核心理念：</strong>单词真正掌握的标志是能造出正确的句子，句子真正掌握的标志是能仿写出自己的句子。之前学生难以独立完成这一闭环，现在 AI 在每一步提供即时辅助与反馈。
   </div>
 
-  <p>我们将 <strong>LLM 大语言模型</strong>（秒级三维评价：语法、逻辑、地道性）、<strong>AIGC 视频生成</strong>（15 秒电影级情境锚点）和<strong>艾宾浩斯遗忘曲线</strong>（句子级间隔复习）整合为一个闭环系统，通过<strong>五步句子学习法</strong>实现从词汇认知到句子产出的完整转化。</p>
+  <p class="en">We integrate <strong>LLMs</strong> (real-time 3D evaluation: grammar, logic, nativeness), <strong>AIGC video generation</strong> (15s cinematic episodic anchors), and the <strong>Ebbinghaus algorithm</strong> (sentence-level spaced repetition) into a closed-loop system. Our <strong>Five-Step Sentence Learning Method</strong> takes students from word recognition to independent sentence production.</p>
+  <p class="zh">我们将 <strong>LLM 大语言模型</strong>（秒级三维评价：语法、逻辑、地道性）、<strong>AIGC 视频生成</strong>（15 秒电影级情境锚点）和<strong>艾宾浩斯遗忘曲线</strong>（句子级间隔复习）整合为一个闭环系统，通过<strong>五步句子学习法</strong>实现从词汇认知到句子产出的完整转化。</p>
 
-  <div class="highlight">
+  <div class="highlight en">
+    <strong>12-Week Experiment (n=141):</strong> Rural middle school, Ningxia, China. Experimental group grammar 4.28/5 vs traditional 3.18/5. Delayed retention 80.5% vs 44.1%, p&lt;0.001.
+  </div>
+  <div class="highlight zh">
     <strong>12 周实验验证（n=141）：</strong>宁夏吴忠初中，实验组语法 4.28/5 vs 传统课堂 3.18/5，延迟记忆保持率 80.5% vs 44.1%，p&lt;0.001。
   </div>
 </div>
 
+<!-- STEPS -->
 <div class="steps">
-  <h2>AI 五步句子学习法</h2>
+  <h2 class="en">Five-Step Sentence Learning Method</h2>
+  <h2 class="zh">AI 五步句子学习法</h2>
+
   <div class="step">
     <div class="num">1</div>
-    <div class="text"><h3>理解单词</h3><p>AI 交互学习单词音标、中文释义、词性和例句，观看 AIGC 电影级情境视频，建立初始记忆锚点。</p></div>
+    <div class="text en"><h3>Understand the Word</h3><p>AI teaches pronunciation, meaning, and usage with AIGC cinematic video. Builds the initial memory anchor.</p></div>
+    <div class="text zh"><h3>理解单词</h3><p>AI 交互学习单词音标、中文释义、词性和例句，观看 AIGC 电影级情境视频，建立初始记忆锚点。</p></div>
   </div>
   <div class="step">
     <div class="num">2</div>
-    <div class="text"><h3>理解短语搭配</h3><p>AI 自动提取 3～5 个高频短语搭配，每个配以场景短视频和用法讲解，从"认识单词"到"使用单词"。</p></div>
+    <div class="text en"><h3>Understand Collocations</h3><p>AI extracts 3–5 high-frequency phrases, each with a short scene video and usage explanation.</p></div>
+    <div class="text zh"><h3>理解短语搭配</h3><p>AI 自动提取 3～5 个高频短语搭配，每个配以场景短视频和用法讲解，从"认识单词"到"使用单词"。</p></div>
   </div>
   <div class="step">
     <div class="num">3</div>
-    <div class="text"><h3>理解句型结构</h3><p>AI 拆解目标句型语法框架，基于分级句型库（小学 200 句 / 初中 300 句）进行句型类比和结构分析。</p></div>
+    <div class="text en"><h3>Understand Sentence Structure</h3><p>AI analyzes sentence patterns with a graded pattern library (200 for primary, 300 for secondary).</p></div>
+    <div class="text zh"><h3>理解句型结构</h3><p>AI 拆解目标句型语法框架，基于分级句型库（小学 200 句 / 初中 300 句）进行句型类比和结构分析。</p></div>
   </div>
   <div class="step">
     <div class="num">4</div>
-    <div class="text"><h3>搞清语法</h3><p>AI 诊断语法要点、易错点和知识盲区（时态混淆、介词搭配等），生成针对性预警，为自主造句扫清障碍。</p></div>
+    <div class="text en"><h3>Clarify Grammar</h3><p>AI diagnoses grammar point, common errors, and knowledge gaps — clearing the path for independent writing.</p></div>
+    <div class="text zh"><h3>搞清语法</h3><p>AI 诊断语法要点、易错点和知识盲区（时态混淆、介词搭配等），生成针对性预警，为自主造句扫清障碍。</p></div>
   </div>
   <div class="step">
     <div class="num">5</div>
-    <div class="text"><h3>AI 辅助仿写</h3><p>使用目标单词独立仿写 3～5 个原创句子，LLM 秒级进行三维评价（语法、逻辑、地道性），引导纠错直至达标。</p></div>
+    <div class="text en"><h3>AI-Assisted Imitation Writing</h3><p>Write 3–5 original sentences. LLM provides instant 3D evaluation (grammar, logic, nativeness) and guided correction.</p></div>
+    <div class="text zh"><h3>AI 辅助仿写</h3><p>使用目标单词独立仿写 3～5 个原创句子，LLM 秒级进行三维评价（语法、逻辑、地道性），引导纠错直至达标。</p></div>
   </div>
 
   <div class="demo-video">
-    <h3>⬇ 五步法实战示例（以 make friends 为例）</h3>
+    <h3 class="en">&#9660; Demo: Five-Step Method (make friends)</h3>
+    <h3 class="zh">&#9660; 五步法实战示例（以 make friends 为例）</h3>
     <div class="video-wrap">
       <video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/make%20friends.mp4" controls muted preload="metadata"></video>
     </div>
   </div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
-  <h1>EnglishUP — AIGC 英语教学视频</h1>
-  <p>每个单词配 15 秒电影级情境短视频，建立"情境-单词-例句"三维记忆锚点</p>
-  <div class="badge">12 个示例 · AI Generated · 点击播放</div>
+  <h1 class="en">EnglishUP — AI-Powered Sentence Learning</h1>
+  <h1 class="zh">EnglishUP — AIGC 英语教学视频</h1>
+  <p class="en">15-second cinematic videos for each word — immersive episodic memory anchors</p>
+  <p class="zh">每个单词配 15 秒电影级情境短视频，建立"情境-单词-例句"三维记忆锚点</p>
+  <div class="badge en">12 Examples · AI Generated · Click to Play</div>
+  <div class="badge zh">12 个示例 · AI Generated · 点击播放</div>
 </div>
 
+<!-- VIDEO GRID -->
 <div class="container">
   <div class="grid">
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/shark.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">shark<small>鲨鱼</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/pig.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">pig<small>小猪</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/guide.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">guide<small>导游</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/make%20friends.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">make friends<small>交朋友</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/the%20rule.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">the rule<small>规则</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/trunk.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">trunk<small>树干</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/moment.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">moment<small>时刻</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/reluctant.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">reluctant<small>不情愿</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/late%20for.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">late for<small>迟到</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/scary.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">scary<small>可怕的</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/strange.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">strange<small>奇怪</small></div>
-    </div>
-    <div class="card">
-      <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/Base%20camp.mp4" controls muted preload="metadata"></video></div>
-      <div class="label">base camp<small>大本营</small></div>
-    </div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/shark.mp4" controls muted preload="metadata"></video></div><div class="label">shark</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/pig.mp4" controls muted preload="metadata"></video></div><div class="label">pig</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/guide.mp4" controls muted preload="metadata"></video></div><div class="label">guide</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/make%20friends.mp4" controls muted preload="metadata"></video></div><div class="label">make friends</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/the%20rule.mp4" controls muted preload="metadata"></video></div><div class="label">the rule</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/trunk.mp4" controls muted preload="metadata"></video></div><div class="label">trunk</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/moment.mp4" controls muted preload="metadata"></video></div><div class="label">moment</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/reluctant.mp4" controls muted preload="metadata"></video></div><div class="label">reluctant</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/late%20for.mp4" controls muted preload="metadata"></video></div><div class="label">late for</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/scary.mp4" controls muted preload="metadata"></video></div><div class="label">scary</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/strange.mp4" controls muted preload="metadata"></video></div><div class="label">strange</div></div>
+    <div class="card"><div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/Base%20camp.mp4" controls muted preload="metadata"></video></div><div class="label">base camp</div></div>
   </div>
 </div>
 
 <footer>
-  <p><a href="https://github.com/xsj1984/EnglishUPbyAIGC">GitHub</a> · <a href="https://engup.cn">engup.cn</a> · AI 赋能英语句子教学</p>
+  <p class="en"><a href="https://github.com/xsj1984/EnglishUPbyAIGC">GitHub</a> · <a href="https://engup.cn">engup.cn</a> · AI-Powered English Sentence Learning</p>
+  <p class="zh"><a href="https://github.com/xsj1984/EnglishUPbyAIGC">GitHub</a> · <a href="https://engup.cn">engup.cn</a> · AI 赋能英语句子教学</p>
 </footer>
 
 </body>
