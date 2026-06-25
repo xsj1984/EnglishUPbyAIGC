@@ -1,0 +1,9 @@
+.workbuddy/
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.pdf
+*.fdb_latexmk
+*.fls
+.DS_Store
