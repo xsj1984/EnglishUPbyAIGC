@@ -1,6 +1,6 @@
-# EnglishUP — AI-Powered English Sentence Learning
+# Research on Rapid English Sentence Learning Method Based on Large Language Models and AIGC for Chinese Students
 
-> **Research on Rapid English Sentence Learning Method Based on Large Language Models and AIGC for Chinese Students**
+**EnglishUP — AI-Powered English Sentence Learning**
 
 [English](#english) | [中文](#chinese)
 
