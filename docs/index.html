@@ -20,6 +20,16 @@
   .card .video-wrap video { width: 100%; height: 100%; object-fit: contain; }
   .card .label { padding: 12px 16px; font-weight: 600; font-size: 1.1em; text-align: center; }
   .card .label small { display: block; font-weight: 400; color: #888; font-size: 0.8em; margin-top: 4px; }
+  .steps { max-width: 800px; margin: 60px auto 0; padding: 0 20px; }
+  .steps h2 { text-align: center; font-size: 1.6em; margin-bottom: 32px; color: #1a1a2e; }
+  .step { display: flex; align-items: flex-start; margin-bottom: 20px; padding: 18px 20px; background: #fff; border-radius: 10px; box-shadow: 0 1px 8px rgba(0,0,0,0.06); border-left: 4px solid #0f3460; }
+  .step .num { flex-shrink: 0; width: 36px; height: 36px; background: #0f3460; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1em; margin-right: 16px; }
+  .step .text h3 { font-size: 1.1em; color: #1a1a2e; margin: 0 0 4px; }
+  .step .text p { margin: 0; color: #666; font-size: 0.95em; line-height: 1.6; }
+  .demo-video { max-width: 600px; margin: 40px auto 0; }
+  .demo-video h3 { text-align: center; color: #888; font-weight: 400; margin-bottom: 12px; }
+  .demo-video .video-wrap { aspect-ratio: 16 / 9; overflow: hidden; background: #000; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+  .demo-video .video-wrap video { width: 100%; height: 100%; object-fit: contain; }
   footer { text-align: center; padding: 40px 20px; color: #999; font-size: 0.9em; }
   footer a { color: #0f3460; text-decoration: none; }
 </style>
@@ -81,6 +91,37 @@
     <div class="card">
       <div class="video-wrap"><video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/Base%20camp.mp4" controls muted preload="metadata"></video></div>
       <div class="label">base camp<small>大本营</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="steps">
+  <h2>AI 五步句子学习法</h2>
+  <div class="step">
+    <div class="num">1</div>
+    <div class="text"><h3>理解单词</h3><p>AI 交互学习单词音标、中文释义、词性和例句，观看 AIGC 电影级情境视频，建立初始记忆锚点。</p></div>
+  </div>
+  <div class="step">
+    <div class="num">2</div>
+    <div class="text"><h3>理解短语搭配</h3><p>AI 自动提取 3～5 个高频短语搭配，每个配以场景短视频和用法讲解，从"认识单词"到"使用单词"。</p></div>
+  </div>
+  <div class="step">
+    <div class="num">3</div>
+    <div class="text"><h3>理解句型结构</h3><p>AI 拆解目标句型语法框架，基于分级句型库（小学 200 句 / 初中 300 句）进行句型类比和结构分析。</p></div>
+  </div>
+  <div class="step">
+    <div class="num">4</div>
+    <div class="text"><h3>搞清语法</h3><p>AI 诊断语法要点、易错点和知识盲区（时态混淆、介词搭配等），生成针对性预警，为自主造句扫清障碍。</p></div>
+  </div>
+  <div class="step">
+    <div class="num">5</div>
+    <div class="text"><h3>AI 辅助仿写</h3><p>使用目标单词独立仿写 3～5 个原创句子，LLM 秒级进行三维评价（语法、逻辑、地道性），引导纠错直至达标。</p></div>
+  </div>
+
+  <div class="demo-video">
+    <h3>⬇ 五步法实战示例（以 make friends 为例）</h3>
+    <div class="video-wrap">
+      <video src="https://raw.githubusercontent.com/xsj1984/EnglishUPbyAIGC/main/videos/make%20friends.mp4" controls muted preload="metadata"></video>
     </div>
   </div>
 </div>
